@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Анкета "Ваш характер"</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f4f4f4;
+      }
+      .form-container {
+        background: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      h2 {
+        color: #333;
+      }
+      label {
+        display: block;
+        margin: 10px 0px;
+      }
+      .question {
+        margin: 10px 0px;
+      }
+      input[type="text"] {
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .button-group {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .button-group label {
+        margin-right: 10px;
+      }
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      .submit-button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .submit-button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Анкета "Ваш характер"</h2>
+      <form action="./lab7-2.php" method="post">
+        <label for="name">Введите Ваше имя</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Вопросы анкеты -->
+        <div class="question">
+          <label
+            >1. Считаете ли Вы, что у многих ваших знакомых хороший
+            характер?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q1-yes"
+              name="question1"
+              value="yes"
+              required
+            />
+            <label for="q1-yes">Да</label>
+            <input type="radio" id="q1-no" name="question1" value="no" />
+            <label for="q1-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>2. Раздражают ли Вас мелкие повседневные обязанности?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q2-yes"
+              name="question2"
+              value="yes"
+              required
+            />
+            <label for="q2-yes">Да</label>
+            <input type="radio" id="q2-no" name="question2" value="no" />
+            <label for="q2-no">Нет</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>3. Верите ли Вы, что ваши друзья преданы Вам?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q3-yes"
+              name="question3"
+              value="yes"
+              required
+            />
+            <label for="q3-yes">Да</label>
+            <input type="radio" id="q3-no" name="question3" value="no" />
+            <label for="q3-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >4. Неприятно ли Вам, когда незнакомый человек делает Вам
+            замечание?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q4-yes"
+              name="question4"
+              value="yes"
+              required
+            />
+            <label for="q4-yes">Да</label>
+            <input type="radio" id="q4-no" name="question4" value="no" />
+            <label for="q4-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>5. Способны ли Вы ударить собаку или кошку?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q5-yes"
+              name="question5"
+              value="yes"
+              required
+            />
+            <label for="q5-yes">Да</label>
+            <input type="radio" id="q5-no" name="question5" value="no" />
+            <label for="q5-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>6. Часто ли Вы принимаете лекарства?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q6-yes"
+              name="question6"
+              value="yes"
+              required
+            />
+            <label for="q6-yes">Да</label>
+            <input type="radio" id="q6-no" name="question6" value="no" />
+            <label for="q6-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >7. Часто ли Вы меняете магазин, в который ходите за
+            продуктами?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q7-yes"
+              name="question7"
+              value="yes"
+              required
+            />
+            <label for="q7-yes">Да</label>
+            <input type="radio" id="q7-no" name="question7" value="no" />
+            <label for="q7-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >8. Продолжаете ли Вы отстаивать свою точку зрения, поняв, что
+            ошиблись?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q8-yes"
+              name="question8"
+              value="yes"
+              required
+            />
+            <label for="q8-yes">Да</label>
+            <input type="radio" id="q8-no" name="question8" value="no" />
+            <label for="q8-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>9. Тяготят ли Вас общественные обязанности?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q9-yes"
+              name="question9"
+              value="yes"
+              required
+            />
+            <label for="q9-yes">Да</label>
+            <input type="radio" id="q9-no" name="question9" value="no" />
+            <label for="q9-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>
+            10. Способны ли Вы ждать более 5 минут, не проявляя
+            беспокойства?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q10-yes"
+              name="question10"
+              value="yes"
+              required
+            />
+            <label for="q10-yes">Да</label>
+            <input type="radio" id="q10-no" name="question10" value="no" />
+            <label for="q10-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >11. Часто ли Вам приходят в голову мысли о Вашей
+            невезучести?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q11-yes"
+              name="question11"
+              value="yes"
+              required
+            />
+            <label for="q11-yes">Да</label>
+            <input type="radio" id="q11-no" name="question11" value="no" />
+            <label for="q11-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>12. Сохранилась ли у Вас фигура по сравнению с прошлым?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q12-yes"
+              name="question12"
+              value="yes"
+              required
+            />
+            <label for="q12-yes">Да</label>
+            <input type="radio" id="q12-no" name="question12" value="no" />
+            <label for="q12-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >13. Можете ли Вы с улыбкой воспринимать подтрунивание
+            друзей?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q13-yes"
+              name="question13"
+              value="yes"
+              required
+            />
+            <label for="q13-yes">Да</label>
+            <input type="radio" id="q13-no" name="question13" value="no" />
+            <label for="q13-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>14. Нравится ли Вам семейная жизнь?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q14-yes"
+              name="question14"
+              value="yes"
+              required
+            />
+            <label for="q14-yes">Да</label>
+            <input type="radio" id="q14-no" name="question14" value="no" />
+            <label for="q14-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>15. Злопамятны ли Вы?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q15-yes"
+              name="question15"
+              value="yes"
+              required
+            />
+            <label for="q15-yes">Да</label>
+            <input type="radio" id="q15-no" name="question15" value="no" />
+            <label for="q15-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>
+            16. Находите ли Вы, что стоит погода, типичная для данного времени
+            года?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q16-yes"
+              name="question16"
+              value="yes"
+              required
+            />
+            <label for="q16-yes">Да</label>
+            <input type="radio" id="q16-no" name="question16" value="no" />
+            <label for="q16-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>17. Случается ли Вам с утра быть в плохом настроении?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q17-yes"
+              name="question17"
+              value="yes"
+              required
+            />
+            <label for="q17-yes">Да</label>
+            <input type="radio" id="q17-no" name="question17" value="no" />
+            <label for="q17-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>18. Раздражает ли Вас современная живопись?</label>
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q18-yes"
+              name="question18"
+              value="yes"
+              required
+            />
+            <label for="q18-yes">Да</label>
+            <input type="radio" id="q18-no" name="question18" value="no" />
+            <label for="q18-no">Нет</label>
+          </div>
+        </div>
+        <div class="question">
+          <label
+            >19. Надоедает ли Вам присутствие чужих детей в доме более одного
+            часа?</label
+          >
+          <div class="button-group">
+            <input
+              type="radio"
+              id="q19-yes"
+              name="question19"
+              value="yes"
+              required
+            />
+            <label for="q19-yes">Да</label>
+            <input type="radio" id="q19-no" name="question19" value="no" />
+            <label for="q19-no">Нет</label>
+          </div>
+        </div>
+        <button type="submit" class="submit-button">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>
